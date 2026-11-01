@@ -34,13 +34,38 @@
 
       <h2>Network: exchange rates only</h2>
       <p>
-        The app goes online when you update exchange rates or import data. Requests go to the National Bank of Ukraine
-        (bank.gov.ua), CoinGecko and Binance and contain only currency codes and dates. They contain no amounts, accounts or
+        The app goes online when you update exchange rates or import data. Requests contain no amounts, accounts or
         transactions.
       </p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col">Purpose</th>
+            <th scope="col">What it receives</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>National Bank of Ukraine (bank.gov.ua)</td>
+            <td>Exchange rates and their history</td>
+            <td>Currency code, dates, IP address</td>
+          </tr>
+          <tr>
+            <td>CoinGecko</td>
+            <td>Current crypto rates</td>
+            <td>Coin names, IP address</td>
+          </tr>
+          <tr>
+            <td>Binance</td>
+            <td>Crypto rate history</td>
+            <td>Coin pair, start date, IP address</td>
+          </tr>
+        </tbody>
+      </table>
       <p>
-        Like any website, these services see your IP address, which is covered by their own privacy policies. Links to this
-        page and to the ready-made Shortcuts open in system apps.
+        Your IP address is covered by these services' own privacy policies. Links to this page and to the ready-made
+        Shortcuts open in system apps.
       </p>
 
       <h2>iPhone features</h2>
@@ -48,6 +73,12 @@
         Face ID: the app receives only a yes or no answer from iOS, never biometric data. Notifications are created on the
         phone itself. Wallet payments are passed on by a Shortcut you set up yourself: the amount, merchant and card stay on
         your phone. Siri requests are processed by Apple under its own terms.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        The app does not encrypt data separately: it is protected by your iPhone passcode and by the Face ID lock if you turn
+        it on. Rate requests use HTTPS only.
       </p>
 
       <h2>What you send yourself</h2>
@@ -67,6 +98,16 @@
         Deleting the app removes everything from the phone. Files you exported yourself and iPhone backups stay wherever you
         keep them.
       </p>
+
+      <h2>Your rights</h2>
+      <p>
+        The developer does not hold your financial data, so you can view, correct and delete it right in the app. If you
+        emailed the developer, you can ask to see or delete that message. If you live in the EU or the UK, you can also
+        complain to your supervisory authority.
+      </p>
+
+      <h2>Children</h2>
+      <p>Skrynia is not made specifically for children and collects no data about anyone, children included.</p>
 
       <h2>Changes</h2>
       <p>A new version appears on this page with a new date.</p>
