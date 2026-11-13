@@ -57,6 +57,40 @@ p {
   color: var(--muted);
 }
 
+.hero {
+  margin: 20px 0 24px;
+}
+
+.hero img {
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 22%;
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+/* Знімки магазину — стрічкою з прокруткою вбік, як карусель App Store:
+   шість кадрів у колонку займали б десяток екранів телефона. */
+.shots {
+  display: flex;
+  gap: 12px;
+  margin: 0 -24px;
+  padding: 0 24px 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.shots img {
+  flex: 0 0 auto;
+  width: 220px;
+  height: auto;
+  aspect-ratio: 1320 / 2868;
+  border-radius: 16px;
+  scroll-snap-align: start;
+}
+
 .updated {
   margin-top: 8px;
   font-size: 13px;
